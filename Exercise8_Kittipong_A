@@ -1,0 +1,37 @@
+username = input("Username :")
+password = input("Password :")
+if username == "ham":
+    if password == "12345":
+        print("Welcome to burger.socks shop")
+        print("1. Gryffindor sock      59 THB/pair")
+        print("2. Slytherin sock       56 THB/pair")
+        print("3. Hufflepuff sock      50 THB/pair")
+        print("4. Ravenclaw sock       45 THB/pair")
+        order=input("Would you like which one? (1,2,3,4) :")
+        if order=="1"or order=="2" or order=="3" or order=="4":
+            quantity=int(input("How many pairs would you like? :"))
+            print("-------- Your order --------")
+            if order=="1":
+                gry=59
+                print("Gryffindor socks  x",quantity,"pairs", quantity*gry,"THB" )
+                print("Total  : ",quantity*gry,"THB")
+            elif order == "2":
+                sly=56
+                print("Slytherin socks  x", quantity, "pairs", quantity * sly, "THB")
+                print("Total  : ", quantity * sly, "THB")
+            elif order == "3":
+                huff = 50
+                print("Hufflepuff socks  x", quantity, "pairs", quantity * huff, "THB")
+                print("Total  : ", quantity * huff, "THB")
+            elif order == "4":
+                rav = 45
+                print("Ravenclaw socks  x", quantity, "pairs", quantity * rav, "THB")
+                print("Total  : ", quantity * rav, "THB")
+            print("------- Thank you -------")
+        else:
+            print("Please select 1,2,3,4")
+            print("------- Thank you -------")
+    elif password != "12345":
+        print("Password's incorrect")
+else:
+    print("Username and Password are incorrect.")
