@@ -1,0 +1,7 @@
+number = int(input("Enter the number : "))
+for x in range(number):
+    text = ""
+    space = ""
+    text = ((x+1)*"*")+(x*"*")
+    space = ((number-x)*" ")
+    print(space+text)
