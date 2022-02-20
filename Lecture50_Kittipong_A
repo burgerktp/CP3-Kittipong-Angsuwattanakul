@@ -1,0 +1,14 @@
+def addNumber(x,y):
+    print(x+y)
+def minusNumber(x,y):
+    print(x-y)
+def multiplyNumber(x, y):
+    print(x*y)
+def devideNumber(x, y):
+    print(x/y)
+x=int(input("Choose first number :"))
+y=int(input("Choose second number :"))
+addNumber(x,y)
+minusNumber(x,y)
+multiplyNumber(x,y)
+devideNumber(x,y)
